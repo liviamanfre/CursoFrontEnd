@@ -1,8 +1,8 @@
 // Estrutura de dados 
 
-// Condicionais  ( If Else/ switch Case)
+// Condicionais  ( If Else/ Switch Case)
 // if
-var precoPrduto = 150;
+var precoProduto = 150;
 if (precoProduto >=100){
     console.log("Valor a Pagar: "+(precoProduto*0,9));
 } else {
@@ -10,6 +10,7 @@ if (precoProduto >=100){
 }
 
 //Switch Case
+var mes = 2;
 switch (mes) {
     case 1:
         console.log("Janeiro");
@@ -23,3 +24,41 @@ switch (mes) {
     default:
         console.log("Outro Mês"); 
 }
+
+//Estrutura de Repetição
+
+// For (Contáveis)
+
+for(let i = 0; i<=100; i++){
+    console.log(i);
+}
+
+// while (Incontáveis)
+
+var continuar = true;//condição de parada
+//parada acontece quando continuar for false
+var numeroEscolhido = 3;
+var contador = 0;
+while(continuar){
+    contador++; 
+    let numeroSorteado = Math.round(Math.random()*10);
+    if(numeroEscolhido==numeroSorteado){
+        continuar = false;
+        console.log("Acertou miseravi")
+        console.log("Tentativas: "+contador);
+    }
+}
+
+//Funções (Ação específica) podendo ser chamado a qualquer momento dentro do código
+
+function ola (nome){
+    return "Olá, "+nome;
+}
+
+function hello (nome){ //function void 
+    console.log("Hello, "+nome);
+}
+
+console.log(ola("Lívia"));
+
+hello("Lívia");
