@@ -4,4 +4,4 @@
    - Html
    - Css
    - Responsividade
-   - MidiaQuery
+   - MidiaQuery 
